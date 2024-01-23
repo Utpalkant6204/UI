@@ -1,0 +1,138 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #cccccc;
+  background-image: url("./assets/MicrosoftTeams-image.png");
+}
+
+::-webkit-input-placeholder {
+  font-style: italic;
+  font-size:medium;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  padding: 5px;
+}
+
+/* :-moz-placeholder {
+  font-style: italic;
+}
+
+::-moz-placeholder {
+  font-style: italic;
+}
+
+:-ms-input-placeholder {
+  font-style: italic;
+} */
+
+/* .main{
+    
+} */
+
+.headernew {
+  margin-top: 25px;
+}
+
+.header-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-text {
+  color: white;
+  padding: 13px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header-img {
+  height: auto;
+  width: 48px;
+  padding: 13px;
+}
+
+.textp {
+  color: #cccccc;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 0;
+  line-height: 0.3;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.formdata {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.formdetails {
+  max-width: 400px;
+  width: 100%;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-text{
+  margin: 8% 0;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.email {
+  margin-bottom: 8px;
+}
+
+.password{
+  margin-bottom: 0px;
+}
+
+#input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.emailinput{
+  margin-bottom: 5px;
+}
+.passowrdinput{
+  margin-bottom: 3%;
+}
+
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #0099ff;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+}
+
+.checkbox{
+  margin-bottom: 10%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.checkbox-input {
+  margin-right: 0px; /* Adjust the margin as needed */
+}
+
+.indented-checkbox-text {
+  margin-left: 5px; /* Adjust the margin as needed */
+  font-size: 12px;
+  margin-right: 26%;
+}
+
+.forget{
+  font-size: 12px;
+}
