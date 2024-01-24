@@ -3,7 +3,11 @@ body {
   margin: 0;
   background-color: #cccccc;
   background-image: url("./assets/MicrosoftTeams-image.png");
- 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  background-size:cover ;
+  -webkit-background-size: cover;
 }
 .main {
   margin: 0;
