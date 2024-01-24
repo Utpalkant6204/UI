@@ -14,12 +14,15 @@
   </head>
   <body>
     <div class="main">
+
       <header class="headernew">
         <div class="header-data">
           <img src="./assets/icon.svg" class="header-img" />
           <h1 class="header-text">P A T T E R N F L Y</h1>
         </div>
       </header>
+
+
       <p class="textp">
         This is a placeholder text, only. use this area to place any information
         or inductory
@@ -28,8 +31,14 @@
         message about your application that may be relavent to users.
       </p>
 
+
       <div class="formdata">
         <form action="" class="formdetails">
+          <select name="language-picker-select" id="language-picker-select">
+            <option lang="en" value="english" selected>English</option>
+            <option lang="hi" value="Hindi">Hindi</option>
+          </select>
+
           <p class="login-text">Log In to Your Account</p>
           <div class="email">
             <input
@@ -54,22 +63,27 @@
           </div>
 
           <div class="checkbox">
-              <input id="myinput" type="checkbox" class="checkbox-input"/>
-              <label for="myinput" class="indented-checkbox-text"
-                >Keep me logged in for 30 days
-              
-              </label>
-              <label class="forget"><a href="">Forget password?</a></label>
-            <!-- <p class="forget"><a href="">forget password</a></p> -->
+            <input id="myinput" type="checkbox" class="checkbox-input" />
+            <label for="myinput" class="indented-checkbox-text"
+              >Keep me logged in for 30 days
+            </label>
+            <label class="forget"><a href="">Forget password?</a></label>
           </div>
-          
+
           <button type="submit" class="btn">Log In</button>
 
-          <div>
-            <p>Need an account? <a href="">Sign up</a></p>
+          <div class="signup">
+            <p class="text1">Need an account? <a href="">Sign up</a></p>
           </div>
         </form>
       </div>
+
+
+      <div class="footer">
+        <p style="color: aliceblue;">Terms of Use &middot; Help &middot; Privacy Policy</p>
+      </div>
+
+
     </div>
   </body>
 </html>

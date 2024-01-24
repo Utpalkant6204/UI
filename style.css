@@ -4,12 +4,20 @@ body {
   background-color: #cccccc;
   background-image: url("./assets/MicrosoftTeams-image.png");
 }
+.main{
+  margin: 0;
+  padding: 0;
+}
 
 ::-webkit-input-placeholder {
   font-style: italic;
   font-size:medium;
   font-family:Georgia, 'Times New Roman', Times, serif;
-  padding: 5px;
+  padding: 2px;
+}
+
+a{
+  text-decoration: none;
 }
 
 /* :-moz-placeholder {
@@ -29,7 +37,7 @@ body {
 } */
 
 .headernew {
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 .header-data {
@@ -39,13 +47,13 @@ body {
 }
 .header-text {
   color: white;
-  padding: 13px;
+  padding: 8px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .header-img {
   height: auto;
   width: 48px;
-  padding: 13px;
+  padding: 8px;
 }
 
 .textp {
@@ -62,7 +70,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3%;
+  margin-top: 2%;
 }
 
 .formdetails {
@@ -97,8 +105,16 @@ body {
   border-radius: 2px;
 }
 
+input:focus{
+  border: 1px solid #1670BE;
+  box-shadow: 0 0 4px #1670BE;
+  outline-offset: 0px;
+  outline: none;
+}
+
 .emailinput{
   margin-bottom: 5px;
+  border: 1px solid;
 }
 .passowrdinput{
   margin-bottom: 3%;
@@ -106,15 +122,42 @@ body {
 
 
 .btn {
-  width: 100%;
-  padding: 10px;
-  background-color: #0099ff;
-  color: white;
   border: none;
   border-radius: 2px;
-  cursor: pointer;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
+  width: 100%;
+  padding: 10px;
+  background: #3498db;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: #2980b9;
+}
+
+.btn:active {
+  background: #2980b9;
+  top: 2px;
+}
+
+.btn:before {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  line-height: 3;
+  font-size: 140%;
+  width: 60px;
 }
 
 .checkbox{
@@ -124,15 +167,41 @@ body {
   align-items: center;
 }
 .checkbox-input {
-  margin-right: 0px; /* Adjust the margin as needed */
+  margin-right: 0px; 
 }
 
 .indented-checkbox-text {
-  margin-left: 5px; /* Adjust the margin as needed */
+  margin-left: 5px;
   font-size: 12px;
   margin-right: 26%;
 }
 
 .forget{
   font-size: 12px;
+  
+}
+
+.signup{
+  text-align: center;
+}
+
+.text1{
+  margin-bottom: 0;
+  padding: 12px;
+}
+
+#language-picker-select {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  margin-left: 80%;
+  font-family: cursive;
+}
+
+.footer{
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-align: center;
+  font-size: 13px;
+  font-family: 'Times New Roman', Times, serif;
 }
