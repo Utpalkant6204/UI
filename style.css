@@ -223,18 +223,27 @@ input:focus {
 
   .login-text {
     font-size: 20px;
+  }
 
-    .indented-checkbox-text {
-      font-size: 10px;
-      margin-right: 10%;
-    }
+  .indented-checkbox-text {
+    font-size: 10px;
+    margin-right: 10%;
+  }
 
-    .forget {
-      font-size: 10px;
-    }
+  .forget {
+    font-size: 10px;
+  }
 
-    .text1 {
-      padding: 8px;
-    }
+  .text1 {
+    padding: 8px;
+  }
+
+  .formdata {
+    flex-direction: column; 
+    margin-top: 8%; 
+  }
+
+  .formdetails {
+    max-width: 90%;
   }
 }
