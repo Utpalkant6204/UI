@@ -208,7 +208,7 @@ input:focus {
   font-family: "Times New Roman", Times, serif;
 }
 
-@media screen and (max-width: 768px) {    
+@media screen and (max-width: 600px) {    
   .header-img {
     width: 30px;
   }
