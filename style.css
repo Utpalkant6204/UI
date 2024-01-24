@@ -168,22 +168,20 @@ input:focus {
 }
 
 .checkbox {
-  margin-bottom: 10%;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
-}
-.checkbox-input {
-  margin-right: 0px;
+  margin-bottom: 8%;
 }
 
 .indented-checkbox-text {
   margin-left: 5px;
   font-size: 12px;
-  margin-right: 26%;
+  margin-right: 6.5vw;
 }
 
 .forget {
+  margin-left: auto; /* This pushes the "Forget password?" link to the right end */
   font-size: 12px;
 }
 
@@ -231,7 +229,6 @@ input:focus {
 
   .indented-checkbox-text {
     font-size: 10px;
-    margin-right: 10%;
   }
 
   .forget {
@@ -250,4 +247,13 @@ input:focus {
   .formdetails {
     max-width: 90%;
   }
+
+  /* .textp {
+    font-size: 2vw;
+    color: black ;;
+  }
+
+  body{
+    background-image: none;
+  } */
 }
