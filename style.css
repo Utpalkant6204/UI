@@ -3,6 +3,7 @@ body {
   margin: 0;
   background-color: #cccccc;
   background-image: url("./assets/MicrosoftTeams-image.png");
+ 
 }
 .main {
   margin: 0;
@@ -61,9 +62,12 @@ a {
   text-align: center;
   margin-top: 0;
   padding-top: 0;
-  line-height: 0.3;
+  margin-bottom: 0;
+  padding-bottom: 0 ;
+  line-height: 1;
   font-family: monospace;
   font-weight: bold;
+ 
 }
 
 .formdata {
@@ -205,14 +209,6 @@ input:focus {
 }
 
 @media screen and (max-width: 768px) {    
-  .formdetails {
-    padding: 15px;
-  }
-
-  #language-picker-select {
-    margin-left: 0;
-  }
-
   .header-img {
     width: 30px;
   }
@@ -222,7 +218,7 @@ input:focus {
   }
 
   .textp {
-    font-size: 14px;
+    font-size: 2vw;
   }
 
   .login-text {
