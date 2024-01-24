@@ -3,20 +3,21 @@ body {
   margin: 0;
   background-color: #cccccc;
   background-image: url("./assets/MicrosoftTeams-image.png");
+  background-size: cover;
 }
-.main{
+.main {
   margin: 0;
   padding: 0;
 }
 
 ::-webkit-input-placeholder {
   font-style: italic;
-  font-size:medium;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: medium;
+  font-family: Georgia, "Times New Roman", Times, serif;
   padding: 2px;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -82,18 +83,18 @@ a{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.login-text{
+.login-text {
   margin: 8% 0;
   text-align: center;
   font-size: 25px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .email {
   margin-bottom: 8px;
 }
 
-.password{
+.password {
   margin-bottom: 0px;
 }
 
@@ -105,26 +106,25 @@ a{
   border-radius: 2px;
 }
 
-input:focus{
-  border: 1px solid #1670BE;
-  box-shadow: 0 0 4px #1670BE;
+input:focus {
+  border: 1px solid #1670be;
+  box-shadow: 0 0 4px #1670be;
   outline-offset: 0px;
   outline: none;
 }
 
-.emailinput{
+.emailinput {
   margin-bottom: 5px;
   border: 1px solid;
 }
-.passowrdinput{
+.passowrdinput {
   margin-bottom: 3%;
 }
-
 
 .btn {
   border: none;
   border-radius: 2px;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: medium;
   width: 100%;
   padding: 10px;
@@ -160,14 +160,14 @@ input:focus{
   width: 60px;
 }
 
-.checkbox{
+.checkbox {
   margin-bottom: 10%;
   display: flex;
   justify-content: start;
   align-items: center;
 }
 .checkbox-input {
-  margin-right: 0px; 
+  margin-right: 0px;
 }
 
 .indented-checkbox-text {
@@ -176,16 +176,15 @@ input:focus{
   margin-right: 26%;
 }
 
-.forget{
+.forget {
   font-size: 12px;
-  
 }
 
-.signup{
+.signup {
   text-align: center;
 }
 
-.text1{
+.text1 {
   margin-bottom: 0;
   padding: 12px;
 }
@@ -198,10 +197,49 @@ input:focus{
   font-family: cursive;
 }
 
-.footer{
+.footer {
   margin-bottom: 0;
   padding-bottom: 0;
   text-align: center;
   font-size: 13px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
+}
+
+@media screen and (max-width: 768px) {    
+  .formdetails {
+    padding: 15px;
+  }
+
+  #language-picker-select {
+    margin-left: 0;
+  }
+
+  .header-img {
+    width: 30px;
+  }
+
+  .header-text {
+    font-size: 18px;
+  }
+
+  .textp {
+    font-size: 14px;
+  }
+
+  .login-text {
+    font-size: 20px;
+
+    .indented-checkbox-text {
+      font-size: 10px;
+      margin-right: 10%;
+    }
+
+    .forget {
+      font-size: 10px;
+    }
+
+    .text1 {
+      padding: 8px;
+    }
+  }
 }
