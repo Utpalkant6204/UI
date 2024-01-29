@@ -74,6 +74,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector("#exampleInputEmail1").value = "";
     document.querySelector("#exampleInputPassword1").value = "";
 
-    window.location.href = "./loginpage/index.html";
+    window.location.href = "../index.html";
   });
 });
