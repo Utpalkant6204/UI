@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Webpage</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand">Beehyv</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Page 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Page 2</a>
+              </li>
+            </ul>
+
+            <div class="d-flex align-items-center" >
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="before">
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-sm-flex align-items-sm-center"
+                    href="../signup/index.html"
+                  >
+                    <img
+                      src="./assets/sign-up2.png"
+                      class="d-none d-sm-block ms-1 mx-1"
+                      height="22"
+                      alt="Black and White Portrait of a Man"
+                      loading="lazy"
+                    />
+                    SignUp
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-sm-flex align-items-sm-center"
+                    href="../index.html"
+                  >
+                    <img
+                      src="./assets/login.png"
+                      class="d-none d-sm-block ms-1 mx-1"
+                      height="22"
+                      alt="Black and White Portrait of a Man"
+                      loading="lazy"
+                    />
+                    Login
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex align-items-center" >
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="after">
+                <li class="nav-item">
+                  <a
+                    class="nav-link d-sm-flex align-items-sm-center"
+                    href="../index.html"
+                  >
+                    LogOut
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Your content goes here -->
+
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h1 class="modal-title fs-5 w-100" id="exampleModalLabel">
+              Your Details
+            </h1>
+            <button
+              type="button"
+              class="btn-close btn-sm"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-8 col-md-8">
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label mb-0"
+                      >Name:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control mt-1"
+                      id="nameInput"
+                      placeholder="Name"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="col-4 col-md-4 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="./assets/vecteezy_people-avatar-icon-sign-design_9341238.png"
+                    style="width: 60px"
+                    alt="image"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-8 col-md-8">
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label mb-0"
+                      >Designation:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control mt-1"
+                      id="designationInput"
+                      placeholder="Developer"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-8 col-md-8">
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label mb-0"
+                      >Address:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control mt-1"
+                      id="addressInput"
+                      placeholder="Masjid Banda"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 col-md-12">
+                  <form class="row g-3">
+                    <div class="col-md-6 mb-3">
+                      <label for="inputEmail4" class="form-label mb-0"
+                        >Contact Number:</label
+                      >
+                      <input
+                        type="number"
+                        class="form-control mt-1"
+                        id="mobileInput"
+                        placeholder="Mobile"
+                      />
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="inputPassword4" class="form-label mb-0"
+                        >Email:</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control mt-1"
+                        id="emailInput"
+                        placeholder="Email"
+                      />
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 col-md-12">
+                  <form class="row g-3">
+                    <div class="col-md-6 mb-3">
+                      <label for="inputEmail4" class="form-label mb-0"
+                        >Link:</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control mt-1"
+                        id="linkInput"
+                        placeholder="www.xyz.com"
+                      />
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="inputPassword4" class="form-label mb-0"
+                        >Language:</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control mt-1"
+                        id="languageInput"
+                        placeholder="English"
+                      />
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-8 col-md-8">
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label mb-0"
+                      >Profile Photo:</label
+                    >
+                    <input
+                      type="file"
+                      class="form-control mt-0"
+                      id="fileInput"
+                      placeholder="Developer"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="submit">
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card m-2">
+            <div class="card-body">
+              <div
+                class="position-absolute top-0 end-0"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <ion-icon
+                  name="create-outline"
+                  class="mt-2 me-2 editClass"
+                ></ion-icon>
+              </div>
+              <div class="border-bottom">
+                <img
+                  src="./assets/5856.jpg"
+                  class="card-img-top mx-auto d-block image"
+                  alt="image"
+                />
+                <p class="card-title text-center mt-3 h4" id="userName">
+                  Utpal Kant
+                </p>
+                <p
+                  class="card-text text-center fs-6 mb-2 fst-italic fw-light"
+                  id="userDesignation"
+                >
+                  Developer
+                </p>
+              </div>
+
+              <div class="border-bottom">
+                <ul
+                  class="list-group list-group-flush list-unstyled d-flex align-items-start mb-3 m-2"
+                >
+                  <li class="fs-6 d-flex align-items-center m-1">
+                    <ion-icon name="location-sharp" class="me-3"></ion-icon>
+                    <p class="text-dark mb-0 fs-custom2" id="userAddress">
+                      Masjid Banda, Hyderabad
+                    </p>
+                  </li>
+
+                  <li class="fs-6 d-flex align-items-center m-1">
+                    <ion-icon name="call-outline" class="me-3"></ion-icon>
+                    <p class="text-dark mb-0" id="userNumber">6204613217</p>
+                  </li>
+
+                  <li class="fs-6 d-flex align-items-center m-1">
+                    <ion-icon name="mail-outline" class="me-3"></ion-icon>
+                    <p class="text-dark mb-0" id="userEmail">
+                      utpal28.ugcs20@iiitranchi.ac.in
+                    </p>
+                  </li>
+
+                  <li class="fs-6 d-flex align-items-center m-1">
+                    <ion-icon name="link-outline" class="me-3"></ion-icon>
+                    <a class="text-primary mb-0 link" id="userLink"
+                      >www.linkedin.com/in/utpal-kant-37ba2b212</a
+                    >
+                  </li>
+
+                  <li class="fs-6 d-flex align-items-center m-1">
+                    <ion-icon name="language-outline" class="me-3"></ion-icon>
+                    <p class="text-dark mb-0" id="userLanguage">English</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="m-2 logo">
+                <ion-icon
+                  name="logo-twitter"
+                  class="icon"
+                  style="color: #0ac9f8"
+                ></ion-icon>
+                <ion-icon
+                  name="logo-linkedin"
+                  class="icon"
+                  style="color: #0082ca"
+                ></ion-icon>
+                <ion-icon
+                  name="logo-github"
+                  class="icon"
+                  style="color: #333333"
+                ></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div class="card m-2">
+            <div class="card-body">
+              <h5 class="card-title border-bottom fs-4 fw-light pb-2 mb-4">
+                BACKGROUND
+              </h5>
+              <ul class="list-items">
+                <div class="about d-flex align-items-start">
+                  <img
+                    src="./assets/person-lines-fill.svg"
+                    alt="image"
+                    srcset=""
+                    style="width: 20px; margin-right: 10px"
+                    class="mt-1"
+                  />
+                  <div class="" style="flex: 1">
+                    <p class="mb-0 pb-1 border-bottom fs-5" style="color: grey">
+                      ABOUT
+                    </p>
+                    <p class="text pt-3 fs-6">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Labore excepturi aspernatur vitae molestias eum inventore
+                      esse placeat, veritatis porro a impedit unde tempore,
+                      consectetur nulla, ipsa quibusdam ullam similique est.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Work Experience Section -->
+                <div class="about d-flex align-items-start mb-3">
+                  <img
+                    src="./assets/building.svg"
+                    alt="image"
+                    srcset=""
+                    style="width: 20px; margin-right: 10px; margin-top: 8px"
+                    class="mt-1"
+                  />
+                  <div class="" style="flex: 1">
+                    <p class="mb-0 pb-1 border-bottom fs-5" style="color: grey">
+                      WORK EXPERIENCE
+                    </p>
+                    <div class="mt-1">
+                      <p class="m-0">
+                        <strong
+                          >Project
+                          <span class="fw-light" style="color: #0082ca"
+                            >Java, Angular</span
+                          ></strong
+                        >
+                      </p>
+                      <p
+                        class="h6 fs-6 fw-light fst-italic"
+                        style="color: grey"
+                      >
+                        Dec 2023 - Jan 2024
+                      </p>
+
+                      <p class="text pt-2 fs-6">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Labore excepturi aspernatur vitae molestias eum
+                        inventore esse placeat, veritatis porro a impedit unde
+                        tempore, consectetur nulla, ipsa quibusdam ullam
+                        similique est.
+                      </p>
+                      <ul class="work-exp-ul">
+                        <li>Random 1</li>
+                        <li>Random 2</li>
+                        <li>Random 3</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Skills Section -->
+                <div class="skills d-flex align-items-start mb-3">
+                  <img
+                    src="./assets/person-workspace.svg"
+                    alt="image"
+                    srcset=""
+                    style="width: 20px; margin-right: 10px; margin-top: 10px"
+                  />
+                  <div style="flex: 1; margin-top: 3px">
+                    <p class="mb-0 pb-1 border-bottom fs-5" style="color: grey">
+                      SKILLS
+                    </p>
+
+                    <div class="mt-3 pb-2 skill-name">
+                      <p class="mt-0 ms-2 mb-0"><strong>Programming</strong></p>
+                      <div class="ms-2 d-flex align-items-center">
+                        <span class="interest-name mt-2 me-2 p-1">C </span>
+                        <span class="interest-name mt-2 me-2 p-1">C++</span>
+                        <span class="interest-name mt-2 me-2 p-1">Python</span>
+                        <span class="interest-name mt-2 me-2 p-1">Java</span>
+                      </div>
+                    </div>
+
+                    <div class="mt-3 pb-2 skill-name">
+                      <p class="mt-0 ms-2 mb-0">
+                        <strong>Web Development</strong>
+                      </p>
+                      <div class="ms-2 d-flex align-items-center">
+                        <span class="interest-name mt-2 me-2 p-1">HTML </span>
+                        <span class="interest-name mt-2 me-2 p-1">CSS</span>
+                        <span class="interest-name mt-2 me-2 p-1"
+                          >JavaScript</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Education Section -->
+                <div class="education d-flex align-items-start mb-3">
+                  <img
+                    src="./assets/mortarboard-fill.svg"
+                    alt="image"
+                    srcset=""
+                    style="width: 20px; margin-right: 10px; margin-top: 8px"
+                  />
+                  <div style="flex: 1; margin-top: 3px">
+                    <p class="mb-0 pb-1 border-bottom fs-5" style="color: grey">
+                      EDUCATION
+                    </p>
+
+                    <div class="mt-1">
+                      <p class="m-0">
+                        <strong
+                          >Bachelor of Technolgy,
+                          <span class="fw-light">IIIT Ranchi</span></strong
+                        >
+                      </p>
+                      <p
+                        class="h6 fs-6 fw-light fst-italic"
+                        style="color: grey"
+                      >
+                        Dec 2020 - May 2024
+                      </p>
+                      <p class="h6 fs-6 fst-italic">CGPA : 9.27</p>
+                      <div class="d-flex">
+                        <span class="interest-name mt-1 me-2 p-1"
+                          >CS-2001 DSA
+                        </span>
+                        <span class="interest-name mt-1 me-2 p-1"
+                          >CS-2201 C++
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Interests Section -->
+                <div class="interest d-flex align-items-start mb-3">
+                  <img
+                    src="./assets/heart-fill.svg"
+                    alt="image"
+                    srcset=""
+                    style="width: 18px; margin-right: 10px; margin-top: 10px"
+                  />
+                  <div style="flex: 1; margin-top: 3px">
+                    <p class="mb-0 pb-1 border-bottom fs-5" style="color: grey">
+                      INTERESTS
+                    </p>
+
+                    <div class="mt-3">
+                      <p class="m-0"><strong>WildLife</strong></p>
+                      <div class="d-flex">
+                        <span class="interest-name mt-2 me-2 p-1">Nature </span>
+                        <span class="interest-name mt-2 me-2 p-1">object</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

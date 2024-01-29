@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-input-placeholder {
+  font-style: italic;
+  font-size: medium;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 2px;
+}
+
+.Header {
+  text-align: center;
+  color: dodgerblue;
+  border-bottom: 1px solid grey;
+}
+
+.txt {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.image{
+  width: 120px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.from{
+  margin-left: 15vw; 
+  margin-right: 18vw;
+}
+
+@media screen and (max-width: 768px) { 
+  .from{
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

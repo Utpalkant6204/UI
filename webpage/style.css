@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+::-webkit-input-placeholder {
+  font-style: italic;
+  font-size: medium;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 2px;
+}
+
+.image {
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.post {
+  border-bottom: 1px solid black;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.5); 
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.editClass {
+  cursor: pointer;
+}
+
+.work-exp-ul {
+  margin-top: -10px;
+}
+
+.skill-name{
+  border-radius: 3px;
+  border-left: 8px solid rgb(10, 209, 133);
+}
+
+.interest-name{
+    color:aliceblue;
+    border-radius: 3px;
+    background-color: rgb(84, 168, 228);
+}

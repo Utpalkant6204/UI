@@ -105,7 +105,7 @@ a {
   margin-bottom: 0px;
 }
 
-#input {
+#input1, #input2 {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
@@ -177,6 +177,7 @@ input:focus {
 .indented-checkbox-text {
   margin-left: 5px;
   font-size: 12px;
+  /* margin-right: 6.5vw; */
 }
 
 .forget {
