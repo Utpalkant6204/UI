@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
   const userloggedin = JSON.parse(localStorage.getItem("loggedin")) || [];
-  console.log(userloggedin);
+  console.log(userloggedin[0].email);
 
   let usersData = JSON.parse(localStorage.getItem("usersData"));
   console.log(usersData);
-  const user = usersData.filter((user) => user.email === userloggedin.email);
+  const user = usersData.filter((user) => user.email === userloggedin[0].email);
   console.log(user);
 
   const beforelogin = document.getElementById("before");
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const mergedUserData = { ...user[0], ...data };
     usersData = usersData.map((user) =>
-      user.email === userloggedin.email ? mergedUserData : user
+      user.email === userloggedin[0].email ? mergedUserData : user
     );
     localStorage.setItem("usersData", JSON.stringify(usersData));
     window.location.reload();

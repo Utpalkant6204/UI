@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     let usersData = JSON.parse(localStorage.getItem("usersData")) || [];
+    console.log(usersData)
 
     if (isNaN(employeeId) || employeeId === "") {
       alert("Employee ID must be a non-empty number.");
@@ -54,12 +55,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Create an object with the form data
     const formData = {
+      username :email,
       firstName: firstName,
       lastName: lastName,
       dob: dob,
       employeeId: employeeId,
       email: email,
       password: password,
+      name: "",
     };
 
     usersData.push(formData);
