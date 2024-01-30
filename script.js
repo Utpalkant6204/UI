@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const userListString = JSON.stringify(userList);
 
     localStorage.setItem("usersData", userListString);
+    history.go(0);
   }
 
   console.log(loggedin.length)
