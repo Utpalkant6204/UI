@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
       lastName: "Kant",
       dateOfBirth: "2002-10-10",
       employeeID: 1038,
-      email: "utpal.kant@beehyv.com",
+      email: "utpal.kant@gmail.com",
       profilePicture: "/path/to/profile_picture.jpg",
       designation: "Software Developer",
       contactNumber: "6204613217",
