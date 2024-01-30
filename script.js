@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
       lastName: "Ks",
       dateOfBirth: "1995-05-15",
       employeeID: 12345,
-      email: "vineetks@beehyv.com",
+      email: "vineetks@gmail.com",
       profilePicture: "/path/to/profile_picture.jpg",
       designation: "Senior Software Developer",
       contactNumber: "1234567890",
